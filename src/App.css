@@ -1,0 +1,332 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  padding: 0 auto;
+  /* box-sizing: border-box; */
+}
+
+body {
+  background-color: var(--body_background);
+  text-align: center;
+}
+
+.container {
+  background-color: var(--container_color);
+  width: 70rem;
+  border-radius: 1%;
+  /* margin-top: 1.5rem; */
+  box-shadow: 0px 3px 3px 0px rgb(53, 51, 51);
+}
+
+.header {
+  /* background-color: rgb(236, 236, 236); */
+  margin-top: 3rem;
+  color: var(--text_color);
+  padding-bottom: 1rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* height: 5rem; */
+}
+
+.form {
+  /* background-color: rgb(236, 236, 236); */
+  padding-top: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.add-form {
+  background-color: var(--task_color);
+  color: var(--text_color);
+  width: 52rem;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 10px;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.5px 2px 0px rgb(53, 51, 51);
+}
+
+.update-form {
+  background-color: var(--task_color);
+  color: var(--text_color);
+  width: 47rem;
+  border: none;
+  outline: none;
+  text-align: left;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.5px 2px 0px rgb(53, 51, 51);
+}
+
+.add-btn {
+  background-color: var(--task_color);
+  color: var(--text_color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 11px 15px;
+  box-shadow: 0px 0.5px 2px 0px rgb(53, 51, 51);
+  cursor: pointer;
+}
+
+.update {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+}
+
+.update-btn {
+  background-color: var(--task_color);
+  color: var(--text_color);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 11px 7px;
+  margin-right: 10px;
+  box-shadow: 0px 0.5px 2px 0px rgb(53, 51, 51);
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: var(--cancel);
+  color: #ffff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 11px 7px;
+  box-shadow: 0px 0.5px 2px 0px rgb(53, 51, 51);
+  cursor: pointer;
+}
+
+.app {
+  text-align: center;
+  padding: 1.7rem 1.5rem 0rem 1.5rem;
+  margin-top: 2rem;
+  min-height: 25rem;
+  box-shadow: 0 -5px 5px -6px var(--box);
+}
+
+.task {
+  display: flex;
+  justify-content: center;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0px 0.5px 2px 0px rgb(53, 51, 51);
+}
+
+.taskBg {
+  background-color: var(--task_color);
+  color: var(--text_color);
+  width: 100%;
+  /* margin-top: 0rem; */
+  /* margin-bottom: 1.25rem; */
+  /* margin-left: 4.2rem; */
+  padding: 10px 140px 10px 22px;
+  text-align: left;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.taskBg .taskText {
+  flex: 1;
+}
+
+.taskNumber {
+  color: var(--text_color);
+  text-align: center;
+  margin-right: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconsWrap {
+  background-color: var(--task_color);
+  display: flex;
+  width: 100%;
+  height: 1.5rem;
+  margin-top: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.icon {
+  background-color: var(--task_color);
+  display: flex;
+  width: 15rem;
+  margin: 0;
+  color: var(--icon_color);
+  cursor: pointer;
+}
+
+.taskBg .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.icon .Edit :hover {
+  color: var(--cancel);
+}
+
+.icon .Delete :hover {
+  color: var(--cancel);
+}
+
+.time {
+  color: var(--text_color);
+}
+
+.no-task{
+  color: var(--text_color);
+}
+
+.footer{
+  color: var(--text_color);
+}
+
+.footer a{
+  color: var(--text_color);
+  text-decoration: none;
+}
+
+/* .task .iconsWrap .time {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  width: auto;
+  display: inline-block;
+} */
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 50rem;
+  }
+  .add-form {
+    width: 35rem;
+  }
+  .update-form {
+    width: 30rem;
+  }
+  .task {
+    margin: 0;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 40em;
+  }
+  .add-form {
+    width: 27rem;
+  }
+  .update-form {
+    width: 22rem;
+  }
+  .task {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 30rem;
+  }
+  .add-form {
+    width: 18rem;
+  }
+  .update-form {
+    width: 15rem;
+  }
+  .task {
+    margin: 0;
+  }
+  .icon {
+    width: 8rem;
+  }
+  .time {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 512px) {
+  .container {
+    width: 24rem;
+  }
+  .header {
+    padding-bottom: 0.5rem;
+  }
+  .form {
+    padding: 0;
+  }
+  .add {
+    display: flex;
+    flex-direction: column;
+  }
+  .add-form {
+    margin-right: 0;
+    width: 18rem;
+    padding: 8px;
+    border-radius: 0.5rem 0 0.5rem 0;
+  }
+  .add-btn {
+    width: 4rem;
+    padding: 4px 5px;
+    font-size: 0.9rem;
+    border-radius: 0 0 0 0.5rem;
+  }
+  .update {
+    display: flex;
+    flex-direction: column;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+  }
+  .update-form {
+    width: 18rem;
+    padding: 8px;
+    border-radius: 0.5rem 0 0.5rem 0;
+  }
+  .update-btn {
+    width: 4rem;
+    padding: 4px 5px;
+    margin-right: 0;
+    font-size: 0.9rem;
+    border-radius: 0 0 0 0.5rem;
+  }
+  .cancel-btn {
+    width: 4rem;
+    padding: 4px 5px;
+    font-size: 0.9rem;
+    border-radius: 0 0 0 0;
+  }
+  .app {
+    margin-top: 1rem;
+  }
+  .task {
+    margin: 0;
+  }
+  .taskNumber {
+    padding-left: 0;
+  }
+  .icon {
+    width: 5rem;
+  }
+  .time {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .container {
+    width: 21rem;
+  }
+  .footer {
+    font-size: 0.9rem;
+  }
+}
