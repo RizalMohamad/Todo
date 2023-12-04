@@ -324,7 +324,7 @@ body {
 
 @media screen and (max-width: 412px) {
   .container {
-    width: 21rem;
+    width: 23rem;
   }
   .footer {
     font-size: 0.9rem;
